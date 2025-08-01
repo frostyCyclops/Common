@@ -68,13 +68,6 @@ def print_message(msg, mode='info'):
         print(('[#] ' + msg))
 
 
-def get_geofetch_dir():
-    if getattr(sys, 'frozen', False):
-        return os.path.dirname(sys.executable)
-    else:
-        return sys.path[0]
-
-
 def get_file_name(path, extension=False):
     """Given a file path will split/splitext the name of the file.
 
